@@ -5,7 +5,12 @@
 int main(){
   int die1=0,die2=0;
   int total=0;
+  char name[100];
 
+  printf("What is your name?\n>");
+  scanf("%s",name);
+  printf("Hello,%s!\n",name);
+  
   srand(time(NULL));
   die1 = rand()%6+1;
   die2 = rand()%6+1;
